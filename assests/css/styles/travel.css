@@ -1,0 +1,504 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+    color: white;
+    padding: 22px;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    margin-inline: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+ul li a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+
+.register-btn {
+    background: #121e42;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.signup-btn {
+    background: #121e42;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons i {
+    font-size: 25px;
+    color: black;
+}
+
+.logo {
+    font-size: 20px;
+    color: black;
+}
+
+.main {
+    background-image: url("../../../assert/images/images/chair-table-dinning-beach-sea-with-blue-sky.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.mainText{
+    position: relative;
+    text-align: center;
+    top: 41%;
+    color: rgba(50, 9, 9, 0.57);font-size: 28px;
+}
+
+.mainText button{
+    width: 140px;
+    height: 40px;
+    border: 2px solid orange;
+    background-color: transparent;
+    font-size: 21px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #230723;
+
+}
+
+.mainText button:hover{
+    background-color: orange;
+}
+
+.head{
+    text-align: center;
+    padding: 85px;
+}
+
+.head span{
+    color: orange;
+}
+
+/*Booking-----------------*/
+.booking{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.booking img{
+    width: 600px;
+    border-radius: 5px;
+}
+
+.form{
+    margin-inline: 28px;
+    width: 320px;
+    background-color: #fff;
+    padding: 22px;
+    box-shadow: 0px 4px 4px 6px rgb(230, 229, 229);
+    border-radius: 4px;
+}
+
+.form input{
+    width: 90px;
+    padding: 8px;
+    font-size: 17px;
+    margin-top: 3px;
+}
+
+.form p{
+    margin-top: 20px;
+}
+
+.form button{
+    width: 80px;
+    height: 28px;
+    background-color: orange;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 22px;
+    border: none;
+}
+
+/*Packages-------------------*/
+.packages{
+    display: flex;
+    justify-content: center;
+}
+
+.packages card{
+    width: 300px;
+    height: 360px;
+    border-radius: 5px;
+    margin-inline: 20px;
+    box-shadow: 0px 4px 4px 6px rgb(230, 229, 229);
+
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.card h3{
+    margin-left: 11px;
+    margin-top: 11px;
+}
+
+.card p{
+    margin-left: 11px;
+    margin-top: 11px;
+}
+
+
+
+
+
+
+
+
+
+
+/*places*/
+.places {
+    height: 100%;
+}
+
+.subtitle{
+    margin: 50px 0 20px;
+    font-size: 2.2vw;
+    font-weight: 500;
+    color: #333;
+
+}
+
+.places h1 {
+    font-size: 1rem;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: #444;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.places p {
+    font-size: 14px;
+}
+
+.places .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 80rem;
+}
+
+.places .cols {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.places .col {
+    width: calc(25% - 2rem);
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.places .container {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.places .front,
+.places .back {
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-position: center;
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align: center;
+    min-height: 280px;
+    height: auto;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.places .back {
+    background: #cedce7;
+    background: -webkit-linear-gradient(45deg, #cedce7 0%, #465258 100%);
+    background: -o-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+    background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+}
+
+.places .front:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #000;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.places .container:hover .front,
+.places .container:hover .back {
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.places .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.places .inner {
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    z-index: 2;
+}
+
+.places .container .back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.places .container .front {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.places .container:hover .back {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.places .container:hover .front {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.places .front .inner p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.places .front .inner p:after {
+    content: '';
+    width: 4rem;
+    height: 2px;
+    position: absolute;
+    background: #f4f6f8;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -.75rem;
+}
+
+.end {
+    flex-direction: column;/*x axis ek y kr gnnw*/
+}
+
+.places .front .inner span {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+.end .top {
+    position: absolute;
+    right: 10px;
+}
+
+.inner i {
+    color: black;
+    margin-top: 20px;
+    font-size: 20px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+
+
+/*Vehicles-------------------*/
+.vehicles{
+    display: flex;
+    justify-content: center;
+}
+
+.vehicles card{
+    width: 300px;
+    height: 360px;
+    border-radius: 5px;
+    margin-inline: 20px;
+    box-shadow: 0px 4px 4px 6px rgb(230, 229, 229);
+
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.card h3{
+    margin-left: 11px;
+    margin-top: 11px;
+}
+
+.card p{
+    margin-left: 11px;
+    margin-top: 11px;
+}
+
+
+/*Contact===========*/
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact img{
+    width: 450px;
+    border-radius: 5px;
+}
+
+.contactForm{
+    width: 300px;
+    height: 230px;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px 6px rgb(231, 229, 229);
+    margin-top: 122px;
+    padding: 22px;
+    margin-inline: 28px;
+    border-radius: 4px;
+
+
+}
+
+.contactForm input{
+    width: 90%;
+    padding: 6px;
+    font-size: 16px;
+    margin-top: 3px;
+}
+
+.contactForm p{
+    margin-top: 20px;
+}
+
+.contactForm button{
+    width: 80px;
+    height: 28px;
+    background-color: orange;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 22px;
+    border: none;
+}
+
+/*Footer=========*/
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    background-color: black;
+    color: #fff;
+    padding: 66px;
+    margin-top: 55px;
+
+}
+
+.text p{
+    margin: 11px;
+}
+
+
+
+

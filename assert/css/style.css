@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/images/chair-table-dinning-beach-sea-with-blue-sky.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+
+.logo {
+    /*width: 140px;*/
+    cursor: pointer;
+    color: #fabd02;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: flex;
+}
+
+span {
+    color: #fff;
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    margin-left: 2px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0px;
+    transition: all .45s ease;
+}
+
+.register-btn {
+    background: #fabd02;
+    color: #000009;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.signup-btn {
+    background: #fabd02;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.container {
+    padding: 0 7%;
+}
+
+.header h1 {
+    font-size: 4vw;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding-top: 22%;
+}
+
+.search-bar {
+    background-color: #f4eded;
+    width: 70%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-bar form input {
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.search-bar form button {
+    /*  background: #ff5361;
+      !*width: 55px;
+      height: 55px;
+      border-radius: 50%;*!
+      border: 0;
+      outline: none;
+      cursor: pointer;*/
+    background: #0c2142;
+    color: #e3dfdf;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.location-input {
+    flex: 1;
+}
+
+.location-input from label {
+    font-weight: 600;
+}
+
+
+/*-------------about--------------------*/
+.about {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(149, 149, 149, 0.3), rgba(165, 164, 164, 0.3)), url("../images/images/winding-road-1556177_1280.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.about-image img {
+    max-width: 600px;
+    height: auto;
+    width: 100%;
+    right: 80px;
+    position: center;
+    display: flex;
+
+}
+
+.about-text h2 {
+    font-size: larger;
+    line-height: 1;
+}
+
+.about-text p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 4rem;
+}
+
+.more{
+    background: #fabd02;
+    color: #000009;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    box-shadow: 0 0 1rem  #fabd02;
+}
+
+/*-------------popular places--------------------*/
+/*
+.subtitle{
+    margin: 50px 0 20px;
+    font-size: 2.2vw;
+    font-weight: 500;
+    color: #333;
+}
+
+.exclusive{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 30px;
+}
+
+.exclusive div img{
+    width: 100%;
+    border-radius: 10px;
+}
+*/
+
+/*
+.exclusive div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+    color: #fff;
+}*/
+
+
+
+
+
+
+
+
+/*places*/
+.places {
+    height: 100%;
+}
+
+.subtitle{
+    margin: 50px 0 20px;
+    font-size: 2.2vw;
+    font-weight: 500;
+    color: #333;
+}
+
+.places h1 {
+    font-size: 1rem;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: #444;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.places p {
+    font-size: 14px;
+}
+
+.places .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 80rem;
+}
+
+.places .cols {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.places .col {
+    width: calc(25% - 2rem);
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.assignments .container {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.places .front,
+.places .back {
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-position: center;
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align: center;
+    min-height: 280px;
+    height: auto;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.places .back {
+    background: #cedce7;
+    background: -webkit-linear-gradient(45deg, #cedce7 0%, #465258 100%);
+    background: -o-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+    background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+}
+
+.places .front:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #000;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.places .container:hover .front,
+.places .container:hover .back {
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.places .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.places .inner {
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    z-index: 2;
+}
+
+.places .container .back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.places .container .front {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.places .container:hover .back {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.places .container:hover .front {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.places .front .inner p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.places .front .inner p:after {
+    content: '';
+    width: 4rem;
+    height: 2px;
+    position: absolute;
+    background: #f4f6f8;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -.75rem;
+}
+
+.end {
+    flex-direction: column;/*x axis ek y kr gnnw*/
+}
+
+.places .front .inner span {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+.end .top {
+    position: absolute;
+    right: 10px;
+}
+
+.inner i {
+    color: black;
+    margin-top: 20px;
+    font-size: 20px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+
